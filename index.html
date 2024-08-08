@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEST</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Navbar start -->
+    <nav class="flex items-center justify-between px-3 mt-8 pb-8 border-b border-b-[#BCE3C9]">
+        <div class="w-[170px] h-[52px]">
+            <img src="./assets/logo.png" alt="Logo" class="w-full h-full">
+        </div>
+        <div class="border-2 border-[#BCE3C9] rounded p-1 pl-3 w-[566px] flex items-center justify-between">
+            <input type="text" placeholder="Search for products..."
+                class="placeholder:italic w-full border-none outline-none">
+            <button
+                class="bg-[#3BB77E] px-5 py-2 rounded font-semibold text-white hover:bg-[#FDC040] transition-colors duration-300">Search</button>
+        </div>
+        <div>
+            <button
+                class="text-base text-[#3bb77e] px-3 py-2 border border-[#ececec] rounded flex items-center gap-2 shadow-md hover:-translate-y-2 transition duration-300">Became
+                Vendor<i class="fa-solid fa-arrow-right-long"></i></button>
+        </div>
+        <ul class="flex items-center gap-5">
+            <li class="flex items-center gap-1 relative lato"><i class="fa-solid fa-repeat text-2xl"></i>Compare
+                <span class="bg-[#3bb77e] w-7 h-7 text-center rounded-full text-white absolute -top-5 left-2">0</span>
+            </li>
+
+            <li class="flex items-center gap-1 relative lato"><i class="fa-regular fa-heart text-2xl"></i>Wishlist<span
+                    class="bg-[#3bb77e] w-7 h-7 text-center rounded-full text-white absolute -top-5 left-2">0</span>
+            </li>
+
+            <li class="flex items-center gap-1 relative lato"><i
+                    class="fa-solid fa-cart-shopping text-2xl"></i>Cart<span
+                    class="bg-[#3bb77e] w-7 h-7 text-center rounded-full text-white absolute -top-5 left-2">0</span>
+            </li>
+
+            <li class="flex items-center gap-1 lato"><i class="fa-regular fa-user text-2xl"></i>Account
+            </li>
+        </ul>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Menubar Start -->
+    <div class="my-3 flex items-center justify-between border-b border-b-[#BCE3C9] pb-5 mb-8 px-3">
+        <div class="flex items-center gap-7">
+            <button
+                class="flex items-center justify-center gap-2 bg-[#3BB77E] px-5 py-2 rounded text-white font-semibold">
+                <i class="fa-solid fa-table-cells-large"></i>
+                <span>Browse All Categories</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <p class="text-[#253D4E] text-base font-bold">
+                <i class="fa-solid fa-fire text-[#3bb77e] text-xl"></i>
+                Hot Deals
+            </p>
+        </div>
+        <ul class="flex items-center gap-14">
+            <li class="text-[#253D4E] text-base font-bold">Home</li>
+            <li class="text-[#253D4E] text-base font-bold">About</li>
+            <li class="text-[#253D4E] text-base font-bold">Shop</li>
+            <li class="text-[#253D4E] text-base font-bold">Vendors</li>
+            <li class="text-[#253D4E] text-base font-bold">Mega Menu</li>
+            <li class="text-[#253D4E] text-base font-bold">Blog</li>
+            <li class="text-[#253D4E] text-base font-bold">Contact</li>
+        </ul>
+        <div class="flex items-center gap-2">
+            <i class="fa-solid fa-headset text-4xl"></i>
+            <div>
+                <h1 class="text-2xl font-semibold text-[#42916D]">1900 - 888</h1>
+                <span class="text-xs">24/7 Support Service</span>
+            </div>
+        </div>
+    </div>
+    <!-- Menubar End -->
+
+    <!-- Main Content Start -->
+    <main class="px-3">
+        <div class="flex gap-8">
+            <!-- Sidebar Start -->
+            <aside class="flex flex-col gap-10">
+
+                <!-- Category Start -->
+
+                <div class="w-[285px] h-fit bg-white shadow-custom border border-[#ececec] p-5 rounded-2xl">
+                    <h1 class="text-[#253D4E] text-2xl font-bold border-b border-b-[#ececec] pb-3 relative">Category
+                        <span class="absolute bottom-0 left-0 w-2/5 h-[2px] bg-[#BCE3C9]"></span>
+                    </h1>
+                    <ul class="mt-2 space-y-2">
+                        <li class="flex items-center justify-between gap-5 border border-[#ececec] p-2 rounded">
+                            <i class="fa-solid fa-bottle-droplet text-3xl w-14 overflow-hidden"></i>
+                            <p class="flex justify-between w-full items-center">
+                                <span class="text-base">Baking material</span>
+                                <span
+                                    class="w-6 h-6 flex items-center justify-center text-center bg-[#BCE3C9] text-[#253D4E] rounded-full">8</span>
+                            </p>
+                        </li>
+                        <li class="flex items-center justify-between gap-5 border border-[#ececec] p-2 rounded">
+                            <i class="fa-solid fa-egg text-3xl w-14 overflow-hidden"></i>
+                            <p class="flex justify-between w-full items-center">
+                                <span class="text-base">Bread and Juice</span>
+                                <span class="w-6 h-6 flex items-center justify-center text-center bg-[#BCE3C9] text-[#253D4E]
+                                    rounded-full">8</span>
+                            </p>
+                        </li>
+                        <li class="flex items-center justify-between gap-5 border border-[#ececec] p-2 rounded">
+                            <i class="fa-solid fa-shirt text-3xl w-14 overflow-hidden"></i>
+                            <p class="flex justify-between w-full items-center">
+                                <span class="text-base">Clothing & beauty</span>
+                                <span class="w-6 h-6 flex items-center justify-center text-center bg-[#BCE3C9] text-[#253D4E]
+                                rounded-full">8</span>
+                            </p>
+                        </li>
+                        <li class="flex items-center justify-between gap-5 border border-[#ececec] p-2 rounded">
+                            <i class="fa-brands fa-delicious text-3xl w-14 overflow-hidden"></i>
+                            <p class="flex justify-between w-full items-center">
+                                <span class="text-base">Deals of The Day</span>
+                                <span class="w-6 h-6 flex items-center justify-center text-center bg-[#BCE3C9] text-[#253D4E]
+                                    rounded-full">8</span>
+                            </p>
+                        </li>
+                        <li class="flex items-center justify-between gap-5 border border-[#ececec] p-2 rounded">
+                            <i class="fa-brands fa-delicious text-3xl w-14 overflow-hidden"></i>
+                            <p class="flex justify-between w-full items-center">
+                                <span class="text-base">Fresh Fruit</span>
+                                <span class="w-6 h-6 flex items-center justify-center text-center bg-[#BCE3C9] text-[#253D4E]
+                                    rounded-full">8</span>
+                            </p>
+                        </li>
+                        <li class="flex items-center justify-between gap-5 border border-[#ececec] p-2 rounded">
+                            <i class="fa-solid fa-fish text-3xl w-14 overflow-hidden"></i>
+                            <p class="flex justify-between w-full items-center">
+                                <span class="text-base">Fresh Seafood</span>
+                                <span class="w-6 h-6 flex items-center justify-center text-center bg-[#BCE3C9] text-[#253D4E]
+                                rounded-full">8</span>
+                            </p>
+                        </li>
+                        <li class="flex items-center justify-between gap-5 border border-[#ececec] p-2 rounded">
+                            <i class="fa-solid fa-cow text-3xl w-14 overflow-hidden"></i>
+                            <p class="flex justify-between w-full items-center">
+                                <span class="text-base">Milks and Dairies</span>
+                                <span class="w-6 h-6 flex items-center justify-center text-center bg-[#BCE3C9] text-[#253D4E]
+                                    rounded-full">8</span>
+                            </p>
+                        </li>
+                        <li class="flex items-center justify-between gap-5 border border-[#ececec] p-2 rounded">
+                            <i class="fa-solid fa-pepper-hot text-3xl w-14 overflow-hidden"></i>
+                            <p class="flex justify-between w-full items-center">
+                                <span class="text-base">Vegetables</span>
+                                <span class="w-6 h-6 flex items-center justify-center text-center bg-[#BCE3C9] text-[#253D4E]
+                                    rounded-full">8</span>
+                            </p>
+                        </li>
+                        <li class="flex items-center justify-between gap-5 border border-[#ececec] p-2 rounded">
+                            <i class="fa-solid fa-wine-bottle text-3xl w-14 overflow-hidden"></i>
+                            <p class="flex justify-between w-full items-center">
+                                <span class="text-base">Wines & Drinks</span>
+                                <span class="w-6 h-6 flex items-center justify-center text-center bg-[#BCE3C9] text-[#253D4E]
+                                    rounded-full">8</span>
+                            </p>
+                        </li>
+                        <li class="flex items-center justify-between gap-5 border border-[#ececec] p-2 rounded">
+                            <i class="fa-solid fa-list text-3xl w-14 overflow-hidden"></i>
+                            <p class="flex justify-between w-full items-center">
+                                <span class="text-base">Uncategorized</span>
+                                <span class="w-6 h-6 flex items-center justify-center text-center bg-[#BCE3C9] text-[#253D4E]
+                                    rounded-full">8</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Category Ends -->
+
+                <div class="w-[285px] h-fit bg-white shadow-custom border border-[#ececec] p-5 rounded-2xl">
+                    <h1
+                        class="text-[#253D4E] text-2xl font-bold border-b border-b-[#ececec] pb-[20px] mb-[30px] relative">
+                        Product Tags
+                        <span class="absolute bottom-0 left-0 w-2/5 h-[2px] bg-[#BCE3C9]"></span>
+                    </h1>
+                    <div class="flex items-center flex-wrap gap-2">
+                        <p
+                            class="hover:-translate-y-2 border text-[#3BB77E] leading-7 border-[#ececec] bg-white rounded-[30px] shadow-custom py-1 pr-4 pl-[30px] font-bold text-[15px] transition duration-300">
+                            <i class="fa-solid fa-xmark"></i>
+                            <span>Brown</span>
+                        </p>
+                        <p
+                            class="hover:-translate-y-2 border text-[#3BB77E] leading-7 border-[#ececec] bg-white rounded-[30px] shadow-custom py-1 pr-4 pl-[30px] font-bold text-[15px] transition duration-300">
+                            <i class="fa-solid fa-xmark"></i>
+                            <span>Coffes</span>
+                        </p>
+                        <p
+                            class="hover:-translate-y-2 border text-[#3BB77E] leading-7 border-[#ececec] bg-white rounded-[30px] shadow-custom py-1 pr-4 pl-[30px] font-bold text-[15px] transition duration-300">
+                            <i class="fa-solid fa-xmark"></i>
+                            <span>Hodo Foods</span>
+                        </p>
+                        <p
+                            class="hover:-translate-y-2 border text-[#3BB77E] leading-7 border-[#ececec] bg-white rounded-[30px] shadow-custom py-1 pr-4 pl-[30px] font-bold text-[15px] transition duration-300">
+                            <i class="fa-solid fa-xmark"></i>
+                            <span>Meats</span>
+                        </p>
+                        <p
+                            class="hover:-translate-y-2 border text-[#3BB77E] leading-7 border-[#ececec] bg-white rounded-[30px] shadow-custom py-1 pr-4 pl-[30px] font-bold text-[15px] transition duration-300">
+                            <i class="fa-solid fa-xmark"></i>
+                            <span>Organic</span>
+                        </p>
+                        <p
+                            class="hover:-translate-y-2 border text-[#3BB77E] leading-7 border-[#ececec] bg-white rounded-[30px] shadow-custom py-1 pr-4 pl-[30px] font-bold text-[15px] transition duration-300">
+                            <i class="fa-solid fa-xmark"></i>
+                            <span>Snack</span>
+                        </p>
+                    </div>
+                </div>
+            </aside>
+            <!-- Sidebar End -->
+
+            <div class="w-full">
+                <!-- Banner Start -->
+                <div class="bg h-[538px] w-full bg-cover bg-no-repeat bg-center px-[100px] py-[50px] rounded-[30px]">
+                    <h1 class="text-7xl leading-none font-bold mb-10">Fresh Vegetables <br> Big discount</h1>
+                    <p class="text-3xl mb-16 text-[#7E7E7E] lato font-semibold">Save up to 50% off on your first order
+                    </p>
+                    <div class="bg-white max-w-[450px] rounded-[50px] h-16 flex">
+                        <input type="email" placeholder="Your Email Address"
+                            class="w-full h-full rounded-[50px] px-[30px] lato border-none outline-none placeholder:font-bold">
+                        <button
+                            class="h-full rounded-[50px] px-[30px] border-none outline-none text-base  bg-[#3BB77E] text-white">subscribe</button>
+                    </div>
+                </div>
+                <!-- Banner End -->
+
+                <!-- Populer Product Start -->
+                <div>
+                    <!-- Navigation start -->
+                    <div class="flex items-center justify-between mt-5">
+                        <p class="text-[#253D4E] text-3xl font-bold pb-3 lato">Populer
+                            Products</p>
+                        <ul class="flex items-center gap-7">
+                            <li
+                                class="text-[#3BB77E] hover:-translate-y-1 cursor-pointer duration-300 font-semibold text-lg">
+                                All</li>
+                            <li
+                                class="text-[#253D4E] hover:text-[#3BB77E] hover:-translate-y-1 cursor-pointer duration-300 font-semibold text-lg">
+                                Baking material</li>
+                            <li
+                                class="text-[#253D4E] hover:text-[#3BB77E] hover:-translate-y-1 cursor-pointer duration-300 font-semibold text-lg">
+                                Fresh Fruits</li>
+                            <li
+                                class="text-[#253D4E] hover:text-[#3BB77E] hover:-translate-y-1 cursor-pointer duration-300 font-semibold text-lg">
+                                Milks & Dairies</li>
+                            <li
+                                class="text-[#253D4E] hover:text-[#3BB77E] hover:-translate-y-1 cursor-pointer duration-300 font-semibold text-lg">
+                                Meats</li>
+                            <li
+                                class="text-[#253D4E] hover:text-[#3BB77E] hover:-translate-y-1 cursor-pointer duration-300 font-semibold text-lg">
+                                Vagetables</li>
+                        </ul>
+                    </div>
+
+                    <!-- Navigation Ends -->
+
+                    <!-- Product Card start -->
+                    <div class="grid grid-cols-4 gap-5 mb-10">
+                        <div
+                            class="group border border-[#ececec] hover:border-[#BCE3C9] rounded-2xl hover:shadow-custom group-hover:transition group-hover:duration-300 p-[25px] relative">
+                            <div class="">
+                                <img src="./assets/product-1-1.jpg" alt="" class="group-hover:hidden">
+                                <img src="./assets/product-1-2.jpg" alt=""
+                                    class="hidden group-hover:block group-hover:scale-105">
+                            </div>
+                            <div class="hidden group-hover:block">
+                                <div class="flex gap-1 text-[#3BB77E] bg-white rounded-md absolute top-28 left-[85px]">
+                                    <p class="p-[6px] hover:text-[#FDC040] cursor-pointer"><i
+                                            class="fa-regular fa-eye"></i></p>
+                                    <p
+                                        class="border-l border-r p-[6px] border-[#3BB77E] cursor-pointer hover:text-[#FDC040]">
+                                        <i class="fa-solid fa-code-compare"></i>
+                                    </p>
+                                    <p class="p-[6px] hover:text-[#FDC040] cursor-pointer"><i
+                                            class="fa-regular fa-heart"></i></p>
+                                </div>
+                            </div>
+                            <span
+                                class="bg-[#3BB77E] text-xs rounded-tl-2xl rounded-br-[20px] px-[20px] py-[10px] min-w-[60px] min-h-[20px] absolute top-0 left-0 text-white lato">13%</span>
+                            <span class="text-[#adadad] text-xs mb-[5px] lato">Fresh Fruit</span>
+                            <p class="text-[#253d4e] text-base mb-[11px] font-bold">Seeds of Change Organic Red Rice</p>
+                            <div class="text-xs flex items-center gap-4 mb-[2px]">
+                                <div>
+
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star-half-stroke text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star text-[#aeaeae] "></i>
+                                </div>
+                                <p class="text-[#aeaeae]">2</p>
+                            </div>
+                            <p class="text-[#b6b6b6] text-base lato">By <span
+                                    class="text-[#3BB77E] lato">NestFood</span></p>
+                            <div class="flex items-center justify-between mt-3">
+                                <p class="text-[#3BB77E] text-lg font-bold">$28.85 - 122.00</p>
+                                <p
+                                    class="bg-[#DEF9EC] px-4 py-2 rounded text-[#29A56C] gap-[2px] text-sm font-bold flex items-center justify-center">
+                                    <i class="fa-solid fa-cart-shopping"></i>Add
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="group border border-[#ececec] hover:border-[#BCE3C9] rounded-2xl hover:shadow-custom group-hover:transition group-hover:duration-300 p-[25px] relative">
+                            <div class="">
+                                <img src="./assets/product-1-1.jpg" alt="" class="group-hover:hidden">
+                                <img src="./assets/product-1-2.jpg" alt=""
+                                    class="hidden group-hover:block group-hover:scale-105">
+                            </div>
+                            <div class="hidden group-hover:block">
+                                <div class="flex gap-1 text-[#3BB77E] bg-white rounded-md absolute top-28 left-[85px]">
+                                    <p class="p-[6px] hover:text-[#FDC040] cursor-pointer"><i
+                                            class="fa-regular fa-eye"></i></p>
+                                    <p
+                                        class="border-l border-r p-[6px] border-[#3BB77E] cursor-pointer hover:text-[#FDC040]">
+                                        <i class="fa-solid fa-code-compare"></i>
+                                    </p>
+                                    <p class="p-[6px] hover:text-[#FDC040] cursor-pointer"><i
+                                            class="fa-regular fa-heart"></i></p>
+                                </div>
+                            </div>
+                            <span
+                                class="bg-[#3BB77E] text-xs rounded-tl-2xl rounded-br-[20px] px-[20px] py-[10px] min-w-[60px] min-h-[20px] absolute top-0 left-0 text-white lato">13%</span>
+                            <span class="text-[#adadad] text-xs mb-[5px] lato">Fresh Fruit</span>
+                            <p class="text-[#253d4e] text-base mb-[11px] font-bold">Seeds of Change Organic Red Rice</p>
+                            <div class="text-xs flex items-center gap-4 mb-[2px]">
+                                <div>
+
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star-half-stroke text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star text-[#aeaeae] "></i>
+                                </div>
+                                <p class="text-[#aeaeae]">2</p>
+                            </div>
+                            <p class="text-[#b6b6b6] text-base lato">By <span
+                                    class="text-[#3BB77E] lato">NestFood</span></p>
+                            <div class="flex items-center justify-between mt-3">
+                                <p class="text-[#3BB77E] text-lg font-bold">$28.85 - 122.00</p>
+                                <p
+                                    class="bg-[#DEF9EC] px-4 py-2 rounded text-[#29A56C] gap-[2px] text-sm font-bold flex items-center justify-center">
+                                    <i class="fa-solid fa-cart-shopping"></i>Add
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="group border border-[#ececec] hover:border-[#BCE3C9] rounded-2xl hover:shadow-custom group-hover:transition group-hover:duration-300 p-[25px] relative">
+                            <div class="">
+                                <img src="./assets/product-1-1.jpg" alt="" class="group-hover:hidden">
+                                <img src="./assets/product-1-2.jpg" alt=""
+                                    class="hidden group-hover:block group-hover:scale-105">
+                            </div>
+                            <div class="hidden group-hover:block">
+                                <div class="flex gap-1 text-[#3BB77E] bg-white rounded-md absolute top-28 left-[85px]">
+                                    <p class="p-[6px] hover:text-[#FDC040] cursor-pointer"><i
+                                            class="fa-regular fa-eye"></i></p>
+                                    <p
+                                        class="border-l border-r p-[6px] border-[#3BB77E] cursor-pointer hover:text-[#FDC040]">
+                                        <i class="fa-solid fa-code-compare"></i>
+                                    </p>
+                                    <p class="p-[6px] hover:text-[#FDC040] cursor-pointer"><i
+                                            class="fa-regular fa-heart"></i></p>
+                                </div>
+                            </div>
+                            <span
+                                class="bg-[#3BB77E] text-xs rounded-tl-2xl rounded-br-[20px] px-[20px] py-[10px] min-w-[60px] min-h-[20px] absolute top-0 left-0 text-white lato">13%</span>
+                            <span class="text-[#adadad] text-xs mb-[5px] lato">Fresh Fruit</span>
+                            <p class="text-[#253d4e] text-base mb-[11px] font-bold">Seeds of Change Organic Red Rice</p>
+                            <div class="text-xs flex items-center gap-4 mb-[2px]">
+                                <div>
+
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star-half-stroke text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star text-[#aeaeae] "></i>
+                                </div>
+                                <p class="text-[#aeaeae]">2</p>
+                            </div>
+                            <p class="text-[#b6b6b6] text-base lato">By <span
+                                    class="text-[#3BB77E] lato">NestFood</span></p>
+                            <div class="flex items-center justify-between mt-3">
+                                <p class="text-[#3BB77E] text-lg font-bold">$28.85 - 122.00</p>
+                                <p
+                                    class="bg-[#DEF9EC] px-4 py-2 rounded text-[#29A56C] gap-[2px] text-sm font-bold flex items-center justify-center">
+                                    <i class="fa-solid fa-cart-shopping"></i>Add
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="group border border-[#ececec] hover:border-[#BCE3C9] rounded-2xl hover:shadow-custom group-hover:transition group-hover:duration-300 p-[25px] relative">
+                            <div class="">
+                                <img src="./assets/product-1-1.jpg" alt="" class="group-hover:hidden">
+                                <img src="./assets/product-1-2.jpg" alt=""
+                                    class="hidden group-hover:block group-hover:scale-105">
+                            </div>
+                            <div class="hidden group-hover:block">
+                                <div class="flex gap-1 text-[#3BB77E] bg-white rounded-md absolute top-28 left-[85px]">
+                                    <p class="p-[6px] hover:text-[#FDC040] cursor-pointer"><i
+                                            class="fa-regular fa-eye"></i></p>
+                                    <p
+                                        class="border-l border-r p-[6px] border-[#3BB77E] cursor-pointer hover:text-[#FDC040]">
+                                        <i class="fa-solid fa-code-compare"></i>
+                                    </p>
+                                    <p class="p-[6px] hover:text-[#FDC040] cursor-pointer"><i
+                                            class="fa-regular fa-heart"></i></p>
+                                </div>
+                            </div>
+                            <span
+                                class="bg-[#3BB77E] text-xs rounded-tl-2xl rounded-br-[20px] px-[20px] py-[10px] min-w-[60px] min-h-[20px] absolute top-0 left-0 text-white lato">13%</span>
+                            <span class="text-[#adadad] text-xs mb-[5px] lato">Fresh Fruit</span>
+                            <p class="text-[#253d4e] text-base mb-[11px] font-bold">Seeds of Change Organic Red Rice</p>
+                            <div class="text-xs flex items-center gap-4 mb-[2px]">
+                                <div>
+
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star-half-stroke text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star text-[#aeaeae] "></i>
+                                </div>
+                                <p class="text-[#aeaeae]">2</p>
+                            </div>
+                            <p class="text-[#b6b6b6] text-base lato">By <span
+                                    class="text-[#3BB77E] lato">NestFood</span></p>
+                            <div class="flex items-center justify-between mt-3">
+                                <p class="text-[#3BB77E] text-lg font-bold">$28.85 - 122.00</p>
+                                <p
+                                    class="bg-[#DEF9EC] px-4 py-2 rounded text-[#29A56C] gap-[2px] text-sm font-bold flex items-center justify-center">
+                                    <i class="fa-solid fa-cart-shopping"></i>Add
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="group border border-[#ececec] hover:border-[#BCE3C9] rounded-2xl hover:shadow-custom group-hover:transition group-hover:duration-300 p-[25px] relative">
+                            <div class="">
+                                <img src="./assets/product-1-1.jpg" alt="" class="group-hover:hidden">
+                                <img src="./assets/product-1-2.jpg" alt=""
+                                    class="hidden group-hover:block group-hover:scale-105">
+                            </div>
+                            <div class="hidden group-hover:block">
+                                <div class="flex gap-1 text-[#3BB77E] bg-white rounded-md absolute top-28 left-[85px]">
+                                    <p class="p-[6px] hover:text-[#FDC040] cursor-pointer"><i
+                                            class="fa-regular fa-eye"></i></p>
+                                    <p
+                                        class="border-l border-r p-[6px] border-[#3BB77E] cursor-pointer hover:text-[#FDC040]">
+                                        <i class="fa-solid fa-code-compare"></i>
+                                    </p>
+                                    <p class="p-[6px] hover:text-[#FDC040] cursor-pointer"><i
+                                            class="fa-regular fa-heart"></i></p>
+                                </div>
+                            </div>
+                            <span
+                                class="bg-[#3BB77E] text-xs rounded-tl-2xl rounded-br-[20px] px-[20px] py-[10px] min-w-[60px] min-h-[20px] absolute top-0 left-0 text-white lato">13%</span>
+                            <span class="text-[#adadad] text-xs mb-[5px] lato">Fresh Fruit</span>
+                            <p class="text-[#253d4e] text-base mb-[11px] font-bold">Seeds of Change Organic Red Rice</p>
+                            <div class="text-xs flex items-center gap-4 mb-[2px]">
+                                <div>
+
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star-half-stroke text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star text-[#aeaeae] "></i>
+                                </div>
+                                <p class="text-[#aeaeae]">2</p>
+                            </div>
+                            <p class="text-[#b6b6b6] text-base lato">By <span
+                                    class="text-[#3BB77E] lato">NestFood</span></p>
+                            <div class="flex items-center justify-between mt-3">
+                                <p class="text-[#3BB77E] text-lg font-bold">$28.85 - 122.00</p>
+                                <p
+                                    class="bg-[#DEF9EC] px-4 py-2 rounded text-[#29A56C] gap-[2px] text-sm font-bold flex items-center justify-center">
+                                    <i class="fa-solid fa-cart-shopping"></i>Add
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="group border border-[#ececec] hover:border-[#BCE3C9] rounded-2xl hover:shadow-custom group-hover:transition group-hover:duration-300 p-[25px] relative">
+                            <div class="">
+                                <img src="./assets/product-1-1.jpg" alt="" class="group-hover:hidden">
+                                <img src="./assets/product-1-2.jpg" alt=""
+                                    class="hidden group-hover:block group-hover:scale-105">
+                            </div>
+                            <div class="hidden group-hover:block">
+                                <div class="flex gap-1 text-[#3BB77E] bg-white rounded-md absolute top-28 left-[85px]">
+                                    <p class="p-[6px] hover:text-[#FDC040] cursor-pointer"><i
+                                            class="fa-regular fa-eye"></i></p>
+                                    <p
+                                        class="border-l border-r p-[6px] border-[#3BB77E] cursor-pointer hover:text-[#FDC040]">
+                                        <i class="fa-solid fa-code-compare"></i>
+                                    </p>
+                                    <p class="p-[6px] hover:text-[#FDC040] cursor-pointer"><i
+                                            class="fa-regular fa-heart"></i></p>
+                                </div>
+                            </div>
+                            <span
+                                class="bg-[#3BB77E] text-xs rounded-tl-2xl rounded-br-[20px] px-[20px] py-[10px] min-w-[60px] min-h-[20px] absolute top-0 left-0 text-white lato">13%</span>
+                            <span class="text-[#adadad] text-xs mb-[5px] lato">Fresh Fruit</span>
+                            <p class="text-[#253d4e] text-base mb-[11px] font-bold">Seeds of Change Organic Red Rice</p>
+                            <div class="text-xs flex items-center gap-4 mb-[2px]">
+                                <div>
+
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star-half-stroke text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star text-[#aeaeae] "></i>
+                                </div>
+                                <p class="text-[#aeaeae]">2</p>
+                            </div>
+                            <p class="text-[#b6b6b6] text-base lato">By <span
+                                    class="text-[#3BB77E] lato">NestFood</span></p>
+                            <div class="flex items-center justify-between mt-3">
+                                <p class="text-[#3BB77E] text-lg font-bold">$28.85 - 122.00</p>
+                                <p
+                                    class="bg-[#DEF9EC] px-4 py-2 rounded text-[#29A56C] gap-[2px] text-sm font-bold flex items-center justify-center">
+                                    <i class="fa-solid fa-cart-shopping"></i>Add
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="group border border-[#ececec] hover:border-[#BCE3C9] rounded-2xl hover:shadow-custom group-hover:transition group-hover:duration-300 p-[25px] relative">
+                            <div class="">
+                                <img src="./assets/product-1-1.jpg" alt="" class="group-hover:hidden">
+                                <img src="./assets/product-1-2.jpg" alt=""
+                                    class="hidden group-hover:block group-hover:scale-105">
+                            </div>
+                            <div class="hidden group-hover:block">
+                                <div class="flex gap-1 text-[#3BB77E] bg-white rounded-md absolute top-28 left-[85px]">
+                                    <p class="p-[6px] hover:text-[#FDC040] cursor-pointer"><i
+                                            class="fa-regular fa-eye"></i></p>
+                                    <p
+                                        class="border-l border-r p-[6px] border-[#3BB77E] cursor-pointer hover:text-[#FDC040]">
+                                        <i class="fa-solid fa-code-compare"></i>
+                                    </p>
+                                    <p class="p-[6px] hover:text-[#FDC040] cursor-pointer"><i
+                                            class="fa-regular fa-heart"></i></p>
+                                </div>
+                            </div>
+                            <span
+                                class="bg-[#3BB77E] text-xs rounded-tl-2xl rounded-br-[20px] px-[20px] py-[10px] min-w-[60px] min-h-[20px] absolute top-0 left-0 text-white lato">13%</span>
+                            <span class="text-[#adadad] text-xs mb-[5px] lato">Fresh Fruit</span>
+                            <p class="text-[#253d4e] text-base mb-[11px] font-bold">Seeds of Change Organic Red Rice</p>
+                            <div class="text-xs flex items-center gap-4 mb-[2px]">
+                                <div>
+
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star-half-stroke text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star text-[#aeaeae] "></i>
+                                </div>
+                                <p class="text-[#aeaeae]">2</p>
+                            </div>
+                            <p class="text-[#b6b6b6] text-base lato">By <span
+                                    class="text-[#3BB77E] lato">NestFood</span></p>
+                            <div class="flex items-center justify-between mt-3">
+                                <p class="text-[#3BB77E] text-lg font-bold">$28.85 - 122.00</p>
+                                <p
+                                    class="bg-[#DEF9EC] px-4 py-2 rounded text-[#29A56C] gap-[2px] text-sm font-bold flex items-center justify-center">
+                                    <i class="fa-solid fa-cart-shopping"></i>Add
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="group border border-[#ececec] hover:border-[#BCE3C9] rounded-2xl hover:shadow-custom group-hover:transition group-hover:duration-300 p-[25px] relative">
+                            <div class="">
+                                <img src="./assets/product-1-1.jpg" alt="" class="group-hover:hidden">
+                                <img src="./assets/product-1-2.jpg" alt=""
+                                    class="hidden group-hover:block group-hover:scale-105">
+                            </div>
+                            <div class="hidden group-hover:block">
+                                <div class="flex gap-1 text-[#3BB77E] bg-white rounded-md absolute top-28 left-[85px]">
+                                    <p class="p-[6px] hover:text-[#FDC040] cursor-pointer"><i
+                                            class="fa-regular fa-eye"></i></p>
+                                    <p
+                                        class="border-l border-r p-[6px] border-[#3BB77E] cursor-pointer hover:text-[#FDC040]">
+                                        <i class="fa-solid fa-code-compare"></i>
+                                    </p>
+                                    <p class="p-[6px] hover:text-[#FDC040] cursor-pointer"><i
+                                            class="fa-regular fa-heart"></i></p>
+                                </div>
+                            </div>
+                            <span
+                                class="bg-[#3BB77E] text-xs rounded-tl-2xl rounded-br-[20px] px-[20px] py-[10px] min-w-[60px] min-h-[20px] absolute top-0 left-0 text-white lato">13%</span>
+                            <span class="text-[#adadad] text-xs mb-[5px] lato">Fresh Fruit</span>
+                            <p class="text-[#253d4e] text-base mb-[11px] font-bold">Seeds of Change Organic Red Rice</p>
+                            <div class="text-xs flex items-center gap-4 mb-[2px]">
+                                <div>
+
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star-half-stroke text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star text-[#aeaeae] "></i>
+                                </div>
+                                <p class="text-[#aeaeae]">2</p>
+                            </div>
+                            <p class="text-[#b6b6b6] text-base lato">By <span
+                                    class="text-[#3BB77E] lato">NestFood</span></p>
+                            <div class="flex items-center justify-between mt-3">
+                                <p class="text-[#3BB77E] text-lg font-bold">$28.85 - 122.00</p>
+                                <p
+                                    class="bg-[#DEF9EC] px-4 py-2 rounded text-[#29A56C] gap-[2px] text-sm font-bold flex items-center justify-center">
+                                    <i class="fa-solid fa-cart-shopping"></i>Add
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card Ends -->
+
+                    <!-- Deals Start -->
+                    <h1 class="capitalize text-[#253D4E] text-2xl font-bold mb-5">Deals of the day</h1>
+                    <div class="grid grid-cols-4 gap-5">
+                        <div>
+                            <div class="w-[282px] h-[285px]">
+                                <img src="./assets/banner-5-min.png" class="w-full h-full object-cover rounded-[15px]"
+                                    alt="">
+                            </div>
+                            <div
+                                class="w-[86%] mx-auto bg-white rounded-[10px] shadow-custom py-[25px] px-[30px] relative transitio duration-300 hover:-translate-y-2 -mt-[90px]">
+                                <h3 class="text-[#253D4E] leading-[1.2] mb-[11px] text-base font-bold">Organic Cage
+                                    Grade A
+                                    Large Eggs
+                                </h3>
+                                <p class="text-[#B6B6B6] lato">By <span class="text-[#3BB77E] lato">Hambger Hel</span>
+                                </p>
+                                <div class="flex items-center mt-3 justify-between">
+                                    <p class="pt-[5px]">
+                                        <span class="text-[#3BB77E] text-lg font-bold underline mr-[6px]">$21.00</span>
+                                        <span class="text-[13px] font-semibold text-[#adadad] line-through">
+                                            <span class="underline">$24.00</span>
+                                        </span>
+                                    </p>
+                                    <p
+                                        class="bg-[#DEF9EC] px-4 py-2 rounded text-[#29A56C] gap-[2px] text-sm font-bold flex items-center justify-center">
+                                        <i class="fa-solid fa-cart-shopping"></i>Add
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="w-[282px] h-[285px]">
+                                <img src="./assets/banner-5-min.png" class="w-full h-full object-cover rounded-[15px]"
+                                    alt="">
+                            </div>
+                            <div
+                                class="w-[86%] mx-auto bg-white rounded-[10px] shadow-custom py-[25px] px-[30px] relative transitio duration-300 hover:-translate-y-2 -mt-[90px]">
+                                <h3 class="text-[#253D4E] leading-[1.2] mb-[11px] text-base font-bold">Organic Cage
+                                    Grade A
+                                    Large Eggs
+                                </h3>
+                                <p class="text-[#B6B6B6] lato">By <span class="text-[#3BB77E] lato">Hambger Hel</span>
+                                </p>
+                                <div class="flex items-center mt-3 justify-between">
+                                    <p class="pt-[5px]">
+                                        <span class="text-[#3BB77E] text-lg font-bold underline mr-[6px]">$21.00</span>
+                                        <span class="text-[13px] font-semibold text-[#adadad] line-through">
+                                            <span class="underline">$24.00</span>
+                                        </span>
+                                    </p>
+                                    <p
+                                        class="bg-[#DEF9EC] px-4 py-2 rounded text-[#29A56C] gap-[2px] text-sm font-bold flex items-center justify-center">
+                                        <i class="fa-solid fa-cart-shopping"></i>Add
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="w-[282px] h-[285px]">
+                                <img src="./assets/banner-5-min.png" class="w-full h-full object-cover rounded-[15px]"
+                                    alt="">
+                            </div>
+                            <div
+                                class="w-[86%] mx-auto bg-white rounded-[10px] shadow-custom py-[25px] px-[30px] relative transitio duration-300 hover:-translate-y-2 -mt-[90px]">
+                                <h3 class="text-[#253D4E] leading-[1.2] mb-[11px] text-base font-bold">Organic Cage
+                                    Grade A
+                                    Large Eggs
+                                </h3>
+                                <p class="text-[#B6B6B6] lato">By <span class="text-[#3BB77E] lato">Hambger Hel</span>
+                                </p>
+                                <div class="flex items-center mt-3 justify-between">
+                                    <p class="pt-[5px]">
+                                        <span class="text-[#3BB77E] text-lg font-bold underline mr-[6px]">$21.00</span>
+                                        <span class="text-[13px] font-semibold text-[#adadad] line-through">
+                                            <span class="underline">$24.00</span>
+                                        </span>
+                                    </p>
+                                    <p
+                                        class="bg-[#DEF9EC] px-4 py-2 rounded text-[#29A56C] gap-[2px] text-sm font-bold flex items-center justify-center">
+                                        <i class="fa-solid fa-cart-shopping"></i>Add
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="w-[282px] h-[285px]">
+                                <img src="./assets/banner-5-min.png" class="w-full h-full object-cover rounded-[15px]"
+                                    alt="">
+                            </div>
+                            <div
+                                class="w-[86%] mx-auto bg-white rounded-[10px] shadow-custom py-[25px] px-[30px] relative transitio duration-300 hover:-translate-y-2 -mt-[90px]">
+                                <h3 class="text-[#253D4E] leading-[1.2] mb-[11px] text-base font-bold">Organic Cage
+                                    Grade A
+                                    Large Eggs
+                                </h3>
+                                <p class="text-[#B6B6B6] lato">By <span class="text-[#3BB77E] lato">Hambger Hel</span>
+                                </p>
+                                <div class="flex items-center mt-3 justify-between">
+                                    <p class="pt-[5px]">
+                                        <span class="text-[#3BB77E] text-lg font-bold underline mr-[6px]">$21.00</span>
+                                        <span class="text-[13px] font-semibold text-[#adadad] line-through">
+                                            <span class="underline">$24.00</span>
+                                        </span>
+                                    </p>
+                                    <p
+                                        class="bg-[#DEF9EC] px-4 py-2 rounded text-[#29A56C] gap-[2px] text-sm font-bold flex items-center justify-center">
+                                        <i class="fa-solid fa-cart-shopping"></i>Add
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Deals Ends -->
+                </div>
+                <!-- Populer Product End -->
+            </div>
+        </div>
+
+        <div class="grid grid-cols-3 mt-20 gap-5">
+            <div class="relative">
+                <div class="rounded-[10px]">
+                    <img src="./assets/banner-1.png" alt="" class="rounded-[10px]">
+                </div>
+                <div class="absolute top-[50%] translate-y-[-50%] px-[50px]">
+                    <h1 class="capitalize font-bold mb-[15px] min-h-[100px] text-2xl lato">Everyday fresh & <br>clean
+                        with<br>
+                        our products</h1>
+                    <button
+                        class="flex items-center justify-center text-white gap-1 bg-[#3BB77E] text-xs py-[7px] pr-2 pl-3"><span
+                            class="lato">Shop
+                            Now</span> <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="rounded-[10px]">
+                    <img src="./assets/banner-2.png" alt="" class="rounded-[10px]">
+                </div>
+                <div class="absolute top-[50%] translate-y-[-50%] px-[50px]">
+                    <h1 class="capitalize lato font-bold mb-[15px] min-h-[100px] text-2xl">Make your breakfast <br>
+                        Healthy
+                        and Easy</h1>
+                    <button
+                        class="flex items-center justify-center text-white gap-1 bg-[#3BB77E] text-xs py-[7px] pr-2 pl-3"><span
+                            class="lato">Shop
+                            Now</span> <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="rounded-[10px]">
+                    <img src="./assets/banner-3.png" alt="" class="rounded-[10px]">
+                </div>
+                <div class="absolute top-[50%] translate-y-[-50%] px-[50px]">
+                    <h1 class="capitalize lato font-bold mb-[15px] min-h-[100px] text-2xl">
+                        The best Organic <br>
+                        products online
+                    </h1>
+                    <button
+                        class="flex items-center justify-center text-white gap-1 bg-[#3BB77E] text-xs py-[7px] pr-2 pl-3"><span
+                            class="lato">Shop
+                            Now</span> <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category Start -->
+        <div class="flex items-center justify-between gap-10 my-8">
+            <div class="flex items-center gap-10">
+                <h1 class="text-[#253d4e] text-[32px] font-bold">Shop by Categories</h1>
+                <p class="flex items-center gap-1 text-[#3BB77E] cursor-pointer justify-center"><span class="lato">All
+                        Categories</span> <i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+            <div class="flex items-center gap-3">
+                <p
+                    class="bg-[#F2F3F4] hover:bg-[#3BB77E] text-[#7E7E7E] hover:text-white cursor-pointer transition duration-200 rounded-[50%] text-2xl h-10 w-10 flex items-center justify-center">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </p>
+                <p
+                    class="bg-[#F2F3F4] hover:bg-[#3BB77E] text-[#7E7E7E] hover:text-white cursor-pointer transition duration-200 rounded-[50%] text-2xl h-10 w-10 flex items-center justify-center">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </p>
+            </div>
+        </div>
+        <div class="grid grid-cols-8 gap-5">
+            <div
+                class="bg-[#F4F6FA] rounded-[10px] px-[30px] pt-10 pb-7 hover:bg-white border border-[#BCE3C9] transition duration-150 group cursor-pointer hover:shadow-custom flex items-center justify-center flex-col">
+                <div>
+                    <img src="./assets/category-2.png" alt="" class="hover:scale-105 transition duration-300">
+                </div>
+                <h1
+                    class="text-[#253D4E] text-center mt-5 mb-1 group-hover:text-[#3BB77E] font-bold leading-[1.2] text-base">
+                    Wines & Alcohol</h1>
+                <span class="text-[15px] font-normal text-[#7e7e7e] lato">2 items</span>
+            </div>
+            <div
+                class="bg-[#F4F6FA] rounded-[10px] px-[30px] pt-10 pb-7 hover:bg-white border border-[#BCE3C9] transition duration-150 group cursor-pointer hover:shadow-custom flex items-center justify-center flex-col">
+                <div>
+                    <img src="./assets/category-1.png" alt="" class="hover:scale-105 transition duration-300">
+                </div>
+                <h1
+                    class="text-[#253D4E] text-center mt-5 mb-1 group-hover:text-[#3BB77E] font-bold leading-[1.2] text-base">
+                    Milks and
+                    Dairies</h1>
+                <span class="text-[15px] font-normal text-[#7e7e7e] lato">5 items</span>
+            </div>
+            <div
+                class="bg-[#F4F6FA] rounded-[10px] px-[30px] pt-10 pb-7 hover:bg-white border border-[#BCE3C9] transition duration-150 group cursor-pointer hover:shadow-custom flex items-center justify-center flex-col">
+                <div>
+                    <img src="./assets/category-1.png" alt="" class="hover:scale-105 transition duration-300">
+                </div>
+                <h1
+                    class="text-[#253D4E] text-center mt-5 mb-1 group-hover:text-[#3BB77E] font-bold leading-[1.2] text-base">
+                    Milks and
+                    Dairies</h1>
+                <span class="text-[15px] font-normal text-[#7e7e7e] lato">5 items</span>
+            </div>
+            <div
+                class="bg-[#F4F6FA] rounded-[10px] px-[30px] pt-10 pb-7 hover:bg-white border border-[#BCE3C9] transition duration-150 group cursor-pointer hover:shadow-custom flex items-center justify-center flex-col">
+                <div>
+                    <img src="./assets/category-1.png" alt="" class="hover:scale-105 transition duration-300">
+                </div>
+                <h1
+                    class="text-[#253D4E] text-center mt-5 mb-1 group-hover:text-[#3BB77E] font-bold leading-[1.2] text-base">
+                    Milks and
+                    Dairies</h1>
+                <span class="text-[15px] font-normal text-[#7e7e7e] lato">5 items</span>
+            </div>
+            <div
+                class="bg-[#F4F6FA] rounded-[10px] px-[30px] pt-10 pb-7 hover:bg-white border border-[#BCE3C9] transition duration-150 group cursor-pointer hover:shadow-custom flex items-center justify-center flex-col">
+                <div>
+                    <img src="./assets/category-1.png" alt="" class="hover:scale-105 transition duration-300">
+                </div>
+                <h1
+                    class="text-[#253D4E] text-center mt-5 mb-1 group-hover:text-[#3BB77E] font-bold leading-[1.2] text-base">
+                    Milks and
+                    Dairies</h1>
+                <span class="text-[15px] font-normal text-[#7e7e7e] lato">5 items</span>
+            </div>
+            <div
+                class="bg-[#F4F6FA] rounded-[10px] px-[30px] pt-10 pb-7 hover:bg-white border border-[#BCE3C9] transition duration-150 group cursor-pointer hover:shadow-custom flex items-center justify-center flex-col">
+                <div>
+                    <img src="./assets/category-1.png" alt="" class="hover:scale-105 transition duration-300">
+                </div>
+                <h1
+                    class="text-[#253D4E] text-center mt-5 mb-1 group-hover:text-[#3BB77E] font-bold leading-[1.2] text-base">
+                    Milks and
+                    Dairies</h1>
+                <span class="text-[15px] font-normal text-[#7e7e7e] lato">5 items</span>
+            </div>
+            <div
+                class="bg-[#F4F6FA] rounded-[10px] px-[30px] pt-10 pb-7 hover:bg-white border border-[#BCE3C9] transition duration-150 group cursor-pointer hover:shadow-custom flex items-center justify-center flex-col">
+                <div>
+                    <img src="./assets/category-1.png" alt="" class="hover:scale-105 transition duration-300">
+                </div>
+                <h1
+                    class="text-[#253D4E] text-center mt-5 mb-1 group-hover:text-[#3BB77E] font-bold leading-[1.2] text-base">
+                    Milks and
+                    Dairies</h1>
+                <span class="text-[15px] font-normal text-[#7e7e7e] lato">5 items</span>
+            </div>
+            <div
+                class="bg-[#F4F6FA] rounded-[10px] px-[30px] pt-10 pb-7 hover:bg-white border border-[#BCE3C9] transition duration-150 group cursor-pointer hover:shadow-custom flex items-center justify-center flex-col">
+                <div>
+                    <img src="./assets/category-1.png" alt="" class="hover:scale-105 transition duration-300">
+                </div>
+                <h1
+                    class="text-[#253D4E] text-center mt-5 mb-1 group-hover:text-[#3BB77E] font-bold leading-[1.2] text-base">
+                    Milks and
+                    Dairies</h1>
+                <span class="text-[15px] font-normal text-[#7e7e7e] lato">5 items</span>
+            </div>
+        </div>
+        <!-- Category Ends -->
+        <!-- Top Selling, Trending Products, Recently added, Top Rated Start -->
+
+        <div class="grid grid-cols-4 gap-4">
+            <div class="my-10">
+                <h1 class="text-[#253D4E] text-2xl font-bold border-b border-b-[#ececec] pb-3 relative">Top Selling
+                    <span class="absolute bottom-0 left-0 w-20 h-[2px] bg-[#BCE3C9]"></span>
+                </h1>
+                <div class="flex items-center flex-col">
+                    <div class="flex items-center p-4 hover:-translate-y-2 transition duration-300">
+                        <div class="h-[101px] w-[101px]">
+                            <img src="./assets/product-10-1.jpg" alt="" class="h-auto max-w-full">
+                        </div>
+                        <div>
+                            <h1
+                                class="text-[#253d4e] hover:text-[#3bb77e] cursor-pointer mb-2 text-base font-bold leading-[1.2]">
+                                Haagen Caramel Cone
+                                Ice
+                                Cream Boxed</h1>
+                            <div class="flex items-center mb-1 text-xs gap-2">
+                                <p>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star-half-stroke text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star text-[#aeaeae] "></i>
+                                </p>
+                                <p>1</p>
+                            </div>
+
+                            <div class="flex items-center">
+                                <p class="text-[#3BB77E] text-lg font-bold underline">$22.85</p>
+                                <span class="text-sm text-[#adadad] font-semibold line-through">$24.52</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-4 hover:-translate-y-2 transition duration-300">
+                        <div class="h-[101px] w-[101px]">
+                            <img src="./assets/product-1-1 (1).jpg" alt="" class="h-auto max-w-full">
+                        </div>
+                        <div>
+                            <h1
+                                class="text-[#253d4e] hover:text-[#3bb77e] cursor-pointer mb-2 text-base font-bold leading-[1.2]">
+                                Seeds of Change
+                                Organic Red Rice</h1>
+                            <div class="flex items-center mb-1 text-xs gap-2">
+                                <p>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star-half-stroke text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star text-[#aeaeae] "></i>
+                                </p>
+                                <p>1</p>
+                            </div>
+
+                            <div class="flex items-center">
+                                <p class="text-[#3BB77E] text-lg font-bold underline">$22.85</p>
+                                <span class="text-sm text-[#adadad] font-semibold line-through">$24.52</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-4 hover:-translate-y-2 transition duration-300">
+                        <div class="h-[101px] w-[101px]">
+                            <img src="./assets/product-5-1.jpg" alt="" class="h-auto max-w-full">
+                        </div>
+                        <div>
+                            <h1
+                                class="text-[#253d4e] hover:text-[#3bb77e] cursor-pointer mb-2 text-base font-bold leading-[1.2]">
+                                Blue Almonds Lightly Salted Vegetables</h1>
+                            <div class="flex items-center mb-1 text-xs gap-2">
+                                <p>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star-half-stroke text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star text-[#aeaeae] "></i>
+                                </p>
+                                <p>1</p>
+                            </div>
+                            <div class="flex items-center">
+                                <p class="text-[#3BB77E] text-lg font-bold underline">$22.85</p>
+                                <span class="text-sm text-[#adadad] font-semibold line-through">$24.52</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-10">
+                <h1 class="text-[#253D4E] text-2xl font-bold border-b border-b-[#ececec] pb-3 relative">Trending
+                    Products
+                    <span class="absolute bottom-0 left-0 w-20 h-[2px] bg-[#BCE3C9]"></span>
+                </h1>
+                <div class="flex items-center flex-col">
+                    <div class="flex items-center p-4 hover:-translate-y-2 transition duration-300">
+                        <div class="h-[101px] w-[101px]">
+                            <img src="./assets/product-10-1.jpg" alt="" class="h-auto max-w-full">
+                        </div>
+                        <div>
+                            <h1
+                                class="text-[#253d4e] hover:text-[#3bb77e] cursor-pointer mb-2 text-base font-bold leading-[1.2]">
+                                Haagen Caramel Cone
+                                Ice
+                                Cream Boxed</h1>
+                            <div class="flex items-center mb-1 text-xs gap-2">
+                                <p>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star-half-stroke text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star text-[#aeaeae] "></i>
+                                </p>
+                                <p>1</p>
+                            </div>
+
+                            <div class="flex items-center">
+                                <p class="text-[#3BB77E] text-lg font-bold underline">$22.85</p>
+                                <span class="text-sm text-[#adadad] font-semibold line-through">$24.52</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-4 hover:-translate-y-2 transition duration-300">
+                        <div class="h-[101px] w-[101px]">
+                            <img src="./assets/product-1-1 (1).jpg" alt="" class="h-auto max-w-full">
+                        </div>
+                        <div>
+                            <h1
+                                class="text-[#253d4e] hover:text-[#3bb77e] cursor-pointer mb-2 text-base font-bold leading-[1.2]">
+                                Seeds of Change
+                                Organic Red Rice</h1>
+                            <div class="flex items-center mb-1 text-xs gap-2">
+                                <p>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star-half-stroke text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star text-[#aeaeae] "></i>
+                                </p>
+                                <p>1</p>
+                            </div>
+
+                            <div class="flex items-center">
+                                <p class="text-[#3BB77E] text-lg font-bold underline">$22.85</p>
+                                <span class="text-sm text-[#adadad] font-semibold line-through">$24.52</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-4 hover:-translate-y-2 transition duration-300">
+                        <div class="h-[101px] w-[101px]">
+                            <img src="./assets/product-5-1.jpg" alt="" class="h-auto max-w-full">
+                        </div>
+                        <div>
+                            <h1
+                                class="text-[#253d4e] hover:text-[#3bb77e] cursor-pointer mb-2 text-base font-bold leading-[1.2]">
+                                Blue Almonds Lightly Salted Vegetables</h1>
+                            <div class="flex items-center mb-1 text-xs gap-2">
+                                <p>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star-half-stroke text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star text-[#aeaeae] "></i>
+                                </p>
+                                <p>1</p>
+                            </div>
+                            <div class="flex items-center">
+                                <p class="text-[#3BB77E] text-lg font-bold underline">$22.85</p>
+                                <span class="text-sm text-[#adadad] font-semibold line-through">$24.52</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-10">
+                <h1 class="text-[#253D4E] text-2xl font-bold border-b border-b-[#ececec] pb-3 relative">Recently added
+                    <span class="absolute bottom-0 left-0 w-20 h-[2px] bg-[#BCE3C9]"></span>
+                </h1>
+                <div class="flex items-center flex-col">
+                    <div class="flex items-center p-4 hover:-translate-y-2 transition duration-300">
+                        <div class="h-[101px] w-[101px]">
+                            <img src="./assets/product-10-1.jpg" alt="" class="h-auto max-w-full">
+                        </div>
+                        <div>
+                            <h1
+                                class="text-[#253d4e] hover:text-[#3bb77e] cursor-pointer mb-2 text-base font-bold leading-[1.2]">
+                                Haagen Caramel Cone
+                                Ice
+                                Cream Boxed</h1>
+                            <div class="flex items-center mb-1 text-xs gap-2">
+                                <p>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star-half-stroke text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star text-[#aeaeae] "></i>
+                                </p>
+                                <p>1</p>
+                            </div>
+
+                            <div class="flex items-center">
+                                <p class="text-[#3BB77E] text-lg font-bold underline">$22.85</p>
+                                <span class="text-sm text-[#adadad] font-semibold line-through">$24.52</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-4 hover:-translate-y-2 transition duration-300">
+                        <div class="h-[101px] w-[101px]">
+                            <img src="./assets/product-1-1 (1).jpg" alt="" class="h-auto max-w-full">
+                        </div>
+                        <div>
+                            <h1
+                                class="text-[#253d4e] hover:text-[#3bb77e] cursor-pointer mb-2 text-base font-bold leading-[1.2]">
+                                Seeds of Change
+                                Organic Red Rice</h1>
+                            <div class="flex items-center mb-1 text-xs gap-2">
+                                <p>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star-half-stroke text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star text-[#aeaeae] "></i>
+                                </p>
+                                <p>1</p>
+                            </div>
+
+                            <div class="flex items-center">
+                                <p class="text-[#3BB77E] text-lg font-bold underline">$22.85</p>
+                                <span class="text-sm text-[#adadad] font-semibold line-through">$24.52</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-4 hover:-translate-y-2 transition duration-300">
+                        <div class="h-[101px] w-[101px]">
+                            <img src="./assets/product-5-1.jpg" alt="" class="h-auto max-w-full">
+                        </div>
+                        <div>
+                            <h1
+                                class="text-[#253d4e] hover:text-[#3bb77e] cursor-pointer mb-2 text-base font-bold leading-[1.2]">
+                                Blue Almonds Lightly Salted Vegetables</h1>
+                            <div class="flex items-center mb-1 text-xs gap-2">
+                                <p>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star-half-stroke text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star text-[#aeaeae] "></i>
+                                </p>
+                                <p>1</p>
+                            </div>
+                            <div class="flex items-center">
+                                <p class="text-[#3BB77E] text-lg font-bold underline">$22.85</p>
+                                <span class="text-sm text-[#adadad] font-semibold line-through">$24.52</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-10">
+                <h1 class="text-[#253D4E] text-2xl font-bold border-b border-b-[#ececec] pb-3 relative">Top Rated
+                    <span class="absolute bottom-0 left-0 w-20 h-[2px] bg-[#BCE3C9]"></span>
+                </h1>
+                <div class="flex items-center flex-col">
+                    <div class="flex items-center p-4 hover:-translate-y-2 transition duration-300">
+                        <div class="h-[101px] w-[101px]">
+                            <img src="./assets/product-10-1.jpg" alt="" class="h-auto max-w-full">
+                        </div>
+                        <div>
+                            <h1
+                                class="text-[#253d4e] hover:text-[#3bb77e] cursor-pointer mb-2 text-base font-bold leading-[1.2]">
+                                Haagen Caramel Cone
+                                Ice
+                                Cream Boxed</h1>
+                            <div class="flex items-center mb-1 text-xs gap-2">
+                                <p>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star-half-stroke text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star text-[#aeaeae] "></i>
+                                </p>
+                                <p>1</p>
+                            </div>
+
+                            <div class="flex items-center">
+                                <p class="text-[#3BB77E] text-lg font-bold underline">$22.85</p>
+                                <span class="text-sm text-[#adadad] font-semibold line-through">$24.52</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-4 hover:-translate-y-2 transition duration-300">
+                        <div class="h-[101px] w-[101px]">
+                            <img src="./assets/product-1-1 (1).jpg" alt="" class="h-auto max-w-full">
+                        </div>
+                        <div>
+                            <h1
+                                class="text-[#253d4e] hover:text-[#3bb77e] cursor-pointer mb-2 text-base font-bold leading-[1.2]">
+                                Seeds of Change
+                                Organic Red Rice</h1>
+                            <div class="flex items-center mb-1 text-xs gap-2">
+                                <p>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star-half-stroke text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star text-[#aeaeae] "></i>
+                                </p>
+                                <p>1</p>
+                            </div>
+
+                            <div class="flex items-center">
+                                <p class="text-[#3BB77E] text-lg font-bold underline">$22.85</p>
+                                <span class="text-sm text-[#adadad] font-semibold line-through">$24.52</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-4 hover:-translate-y-2 transition duration-300">
+                        <div class="h-[101px] w-[101px]">
+                            <img src="./assets/product-5-1.jpg" alt="" class="h-auto max-w-full">
+                        </div>
+                        <div>
+                            <h1
+                                class="text-[#253d4e] hover:text-[#3bb77e] cursor-pointer mb-2 text-base font-bold leading-[1.2]">
+                                Blue Almonds Lightly Salted Vegetables</h1>
+                            <div class="flex items-center mb-1 text-xs gap-2">
+                                <p>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-solid fa-star text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star-half-stroke text-[#FDC040] "></i>
+                                    <i class="fa-regular fa-star text-[#aeaeae] "></i>
+                                </p>
+                                <p>1</p>
+                            </div>
+                            <div class="flex items-center">
+                                <p class="text-[#3BB77E] text-lg font-bold underline">$22.85</p>
+                                <span class="text-sm text-[#adadad] font-semibold line-through">$24.52</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Top Selling, Trending Products, Recently added, Top Rated Ends -->
+
+        <!-- Subscription Start -->
+
+        <div class="bgSubccription mb-10 rounded-[20px] relative bg-cover bg-center bg-no-repeat w-full min-h-[230px]">
+            <div class="px-[78px] py-[84px]">
+                <h1 class="mb-5 text-7xl leading-none text-[#253D4E] font-bold">Stay home & get your daily<br>
+                    needs from our shop</h1>
+                <p class="loto text-lg mb-[45px]">Start Your Daily Shopping with <span class="loto text-[#3BB77E]">Nest
+                        Mart</span></p>
+                <div class="bg-white max-w-[450px] rounded-[50px] h-16 flex">
+                    <input type="email" placeholder="Your Email Address"
+                        class="w-full h-full rounded-[50px] px-[30px] lato border-none outline-none placeholder:font-bold">
+                    <button
+                        class="h-full rounded-[50px] px-[30px] border-none outline-none text-base  bg-[#3BB77E] text-white">subscribe</button>
+                </div>
+            </div>
+            <img src="./assets/banner-9-min.png" class="w-2/5 absolute bottom-0 right-[50px]" alt="">
+        </div>
+
+        <!-- Subscription Ends -->
+
+        <div class="grid grid-cols-5 gap-5">
+            <div class="flex items-center bg-[#f4f6fa] group p-5 rounded-[10px] gap-5">
+                <div class="max-w-[60px]">
+                    <img src="./assets/icon-1.png" alt="" class="group-hover:-translate-y-2 transition duration-300">
+                </div>
+                <div>
+                    <h1 class="cursor-pointer mb-[5px] text-[#242424] text-lg font-semibold">Best prices & offers</h1>
+                    <p class="lato text-[#adadad]">Orders $50 or more</p>
+                </div>
+            </div>
+            <div class="flex items-center bg-[#f4f6fa] group p-5 rounded-[10px] gap-5">
+                <div class="max-w-[60px]">
+                    <img src="./assets/icon-2.png" alt="" class="group-hover:-translate-y-2 transition duration-300">
+                </div>
+                <div>
+                    <h1 class="cursor-pointer mb-[5px] text-[#242424] text-lg font-semibold">Free Delivery</h1>
+                    <p class="lato text-[#adadad]">24/7 amazing services</p>
+                </div>
+            </div>
+            <div class="flex items-center bg-[#f4f6fa] group p-5 rounded-[10px] gap-5">
+                <div class="max-w-[60px]">
+                    <img src="./assets/icon-3.png" alt="" class="group-hover:-translate-y-2 transition duration-300">
+                </div>
+                <div>
+                    <h1 class="cursor-pointer mb-[5px] text-[#242424] text-lg font-semibold">Great daily deal</h1>
+                    <p class="lato text-[#adadad]">When you sign up</p>
+                </div>
+            </div>
+            <div class="flex items-center bg-[#f4f6fa] group p-5 rounded-[10px] gap-5">
+                <div class="max-w-[60px]">
+                    <img src="./assets/icon-4.png" alt="" class="group-hover:-translate-y-2 transition duration-300">
+                </div>
+                <div>
+                    <h1 class="cursor-pointer mb-[5px] text-[#242424] text-lg font-semibold">Wide assortment</h1>
+                    <p class="lato text-[#adadad]">Mega Discounts</p>
+                </div>
+            </div>
+            <div class="flex items-center bg-[#f4f6fa] group p-5 rounded-[10px] gap-5">
+                <div class="max-w-[60px]">
+                    <img src="./assets/icon-5.png" alt="" class="group-hover:-translate-y-2 transition duration-300">
+                </div>
+                <div>
+                    <h1 class="cursor-pointer mb-[5px] text-[#242424] text-lg font-semibold">Easy returns</h1>
+                    <p class="lato text-[#adadad]">Within 30 days</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- Main content End -->
+</body>
+
+</html>

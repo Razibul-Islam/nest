@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    font-family: "Quicksand", sans-serif;
+}
+
+.lato {
+    font-family: "Lato", sans-serif;
+}
+
+.bg {
+    background-image: url("./assets/slider-2-min.png");
+}
+
+.bgSubccription{
+    background-image: url("./assets/banner-10-min.png");
+}
+
+.hover\:shadow-custom:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.shadow-custom {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+}
